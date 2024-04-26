@@ -8,7 +8,7 @@ with open('purchase_prediction_model.pkl','rb') as f:
     model = pickle.load(f)
 
 app = Flask(__name__)
-
+    
 @app.route('/')
 def index():
     return render_template('index.html')
